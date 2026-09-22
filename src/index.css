@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B1528;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Subtle Technical & Architectural background pattern utilities */
+.bg-grid-blueprint {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(197, 168, 105, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(197, 168, 105, 0.05) 1px, transparent 1px);
+}
+
+.bg-grid-blueprint-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-dots-subtle {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(197, 168, 105, 0.15) 1px, transparent 1px);
+}
